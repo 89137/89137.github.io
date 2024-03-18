@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="src/images/axolotll.png" type="image/icon type">
+    <link rel="stylesheet" href="style.css">
+    <script src="src/js/script.js"></script>
+    <title>Index</title>
+</head>
+
+<body>
+    <button id="scrollButton" onclick="scrollToTop()">
+        <img src="src/images/arrow-up-solid.svg" alt="Linkedin" width="32vw" height="32vh">
+    </button>
+    <!-- Navbar -->
+    <nav id="navbar">
+        <div class="nav-wrapper">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#target-about">About</a></li>
+                <li><a href="#target-contact">Contact</a></li>
+            </ul>
+            <div class="logo">
+                <a href="https://www.linkedin.com/in/mattia-warning/" target="_blank">
+                    <img src="src/images/linkedin.svg" alt="Linkedin" width="32vw" height="32vh">
+                </a>
+                <a href="#target-contact">
+                    <img src="src/images/envelope-regular.svg" alt="Email" width="32vw" height="32vh">
+                </a>
+                <a href="https://github.com/89137" target="_blank">
+                    <img src="src/images/github.svg" alt="Email" width="32vw" height="32vh">
+                </a>
+            </div>
+        </div>
+    </nav>
+    <!-- Title -->
+    <div class="mainbody">
+        <div class="head">
+            <div class="title"> Mattia Warning. Software developer.</div>
+            <h1> Student at Grafisch lyceum rotterdam</h1>
+        </div>
+        <a href="#target-section">
+            <img src="src/images/arrow-down-solid.svg" alt="arrow" class="arrow">
+        </a>
+    </div>
+
+    <div class="sidebody">
+
+        <div id="target-section">
+            <!-- scroll -->
+        </div>
+        <h1 style="color: #63e6bfc0; font-size: calc(1.5vw + 1.5vh);">Project examples:</h1>
+
+
+        <!-- Projects -->
+        <div class="projects">
+
+            <div class="project">
+
+                <div class="project-img">
+                    <img src="src/images/digitalSignage.png" alt="Project 1">
+                </div>
+
+                <div class="project-text">
+                    <h2>Project 1</h2>
+                    <p>Short description of Project 1</p>
+                    <a href="" target="_blank">
+                        <img src="src/images/arrow-right-solid.svg" alt="arrowRight" width="52vw" height="52vh">
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="project">
+
+                <div class="project-img">
+                    <img src="src/images/torrontoZoo.png" alt="Project 1">
+                </div>
+
+                <div class="project-text">
+                    <h2>Project 2</h2>
+                    <p>Short description of Project 2</p>
+                    <a href="" target="_blank">
+                        <img src="src/images/arrow-right-solid.svg" alt="arrowRight" width="52vw" height="52vh" class="arrowRight">
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="project">
+
+                <div class="project-img">
+                    <img src="src/images/Verzamelaar.png" alt="Project 1">
+                </div>
+
+                <div class="project-text">
+                    <h2>Project 3</h2>
+                    <p>Short description of Project 3</p>
+                    <a href="" target="_blank">
+                        <img src="src/images/arrow-right-solid.svg" alt="arrowRight" width="52vw" height="52vh">
+                    </a>
+                </div>
+
+            </div>
+        </div>
+        <div class="target-Contact">
+            <a href="#target-about">
+                <img src="src/images/arrow-down-solid.svg" alt="arrow" class="arrow">
+            </a>
+        </div>
+
+    </div>
+    </div>
+
+
+    <!-- about -->
+    <div class="aboutbody">
+        <div id="target-about"><!-- scroll2 --></div>
+        <div class="head">
+            <div class="title"> About:</div>
+        </div>
+        <a href="#target-contact">
+            <img src="src/images/arrow-down-solid.svg" alt="arrow" class="arrow">
+        </a>
+    </div>
+
+    <!-- Contact -->
+    <div class="contactbody">
+        <div id="target-contact"><!-- scroll2 --></div>
+        <div class="contactTitle"> Contact formulier:</div>
+        <div class="container">
+            <form action="https://formspree.io/f/xnqkvjwa" method="POST">
+                <label for="Naam">Naam*</label>
+                <input type="text" id="Naam" name="Naam" placeholder="Naam.." required>
+
+                <label for="Email">Email*</label>
+                <input type="email" id="Email" name="Email" placeholder="Email.." required>
+
+                <label for="Bedrijf">Bedrijf naam*</label>
+                <input type="text" id="Bedrijf" name="Bedrijf" placeholder="Bedrijf naam.." required>
+
+                <label for="Bericht">Bericht*</label>
+                <textarea id="Bericht" name="Bericht" placeholder="Schrijf een bericht.." style="height:200px"
+                    required></textarea>
+
+                <input type="submit" value="Submit">
+            </form>
+            <div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
