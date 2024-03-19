@@ -320,7 +320,7 @@ label {
     }
 
     .title {
-        color: white;
+        color: rgb(0, 0, 0);
         display: flex;
         justify-content: center;
         font-size: calc(1.9vw + 1.9vh);
