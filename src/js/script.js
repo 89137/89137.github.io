@@ -17,3 +17,12 @@ function scrollToTop() {
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 
+
+function toggleStylesheet() {
+  var cssLink = document.getElementById('cssLink');
+  if (cssLink.getAttribute('href') == 'src/css/style1.css') {
+      cssLink.setAttribute('href', 'src/css/style2.css');
+  } else {
+      cssLink.setAttribute('href', 'src/css/style1.css');
+  }
+}
