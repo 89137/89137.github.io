@@ -6,14 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="src/images/axolotll.png" type="image/icon type">
-    <link rel="stylesheet" href="src/css/style1.css" id="cssLink">
+    <link rel="stylesheet" href="src/css/main.css">
+    <link rel="stylesheet" href="src/css/dark.css" id="cssLink">
     <script src="src/js/script.js"></script>
     <title>Index</title>
 </head>
 
 <body>
     <button id="scrollButton" onclick="scrollToTop()">
-        <img src="src/images/arrow-up-solid.svg" alt="Linkedin" width="32vw" height="32vh">
+        <img src="src/images/darkarrow-up-solid.svg" alt="Linkedin" width="32vw" height="32vh" class="toggle-image">
     </button>
     <!-- Navbar -->
     <nav id="navbar">
@@ -25,16 +26,16 @@
             </ul>
             <div class="logo">
                 <a href="https://www.linkedin.com/in/mattia-warning/" target="_blank">
-                    <img src="src/images/linkedin.svg" alt="Linkedin" width="32vw" height="32vh">
+                    <img class="toggle-image" src="src/images/darklinkedin.svg" alt="Linkedin" width="32vw" height="32vh" alt="Light Image">
                 </a>
                 <a href="#target-contact">
-                    <img src="src/images/envelope-regular.svg" alt="Email" width="32vw" height="32vh">
+                    <img class="toggle-image" src="src/images/darkenvelope-regular.svg" alt="Email" width="32vw" height="32vh" alt="Light Image">
                 </a>
                 <a href="https://github.com/89137" target="_blank">
-                    <img src="src/images/github.svg" alt="Email" width="32vw" height="32vh">
+                    <img class="toggle-image" src="src/images/darkgithub.svg" alt="Email" width="32vw" height="32vh" alt="Light Image">
                 </a>
-                <button onclick="toggleStylesheet()" style="border: none; background: none; padding: 0; cursor: pointer;">
-                    <img src="src/images/moon-solid.svg" alt="Email" width="32vw" height="32vh">
+                <button onclick="toggleStylesheetAndImages()" style="border: none; background: none; padding: 0; cursor: pointer;">
+                    <img class="toggle-image" src="src/images/darkmode.svg" alt="Email" width="32vw" height="32vh">
                 </button>
             </div>
         </div>
@@ -46,7 +47,7 @@
             <h1> Student at Grafisch lyceum rotterdam</h1>
         </div>
         <a href="#target-section">
-            <img src="src/images/arrow-down-solid.svg" alt="arrow" class="arrow">
+            <img src="src/images/darkarrow-down-solid.svg" class="arrow toggle-image" alt="arrow"  alt="Light Image">
         </a>
     </div>
 
@@ -68,11 +69,10 @@
                 </div>
 
                 <div class="project-text">
-                    <h2>2D platformer</h2>
-                    <p>Project 1</p>
-                    <a href="https://89137.stu.sd-lab.nl/Opdrachten/Personal/Game/EindProject/index.html" target="_blank">
-                        <img src="src/images/arrow-right-solid.svg" alt="arrowRight" width="52vw" height="52vh">
+                    <a href="https://89137.stu.sd-lab.nl/Opdrachten/Personal/Game/EindProject/index.html" target="_blank" style="text-decoration: none;">
+                        <h2>2D platformer</h2>                       
                     </a>
+                    <p>Project 2</p>
                 </div>
 
             </div>
@@ -80,7 +80,7 @@
             <div class="project">
 
                 <div class="project-img">
-                    <img src="src/images/torrontoZoo.png" alt="Project 1">
+                    <img src="src/images/torrontoZoo.png" alt="Project 1" alt="Light Image">
                 </div>
 
                 <div class="project-text">
@@ -99,18 +99,17 @@
                 </div>
 
                 <div class="project-text">
-                    <h2>Verzamelaar</h2>
-                    <p>Project 3</p>
                     <a href="https://89137.stu.sd-lab.nl/Opdrachten/Jaar2/Beroeps/Verzamelaar_89137/Index.php" target="_blank">
-                        <img src="src/images/arrow-right-solid.svg" alt="arrowRight" width="52vw" height="52vh">
+                        <h2>Verzamelaar</h2>
                     </a>
+                    <p>Project 2</p>
                 </div>
 
             </div>
         </div>
         <div class="target-Contact">
             <a href="#target-about">
-                <img src="src/images/arrow-down-solid.svg" alt="arrow" class="arrow">
+                <img src="src/images/darkarrow-down-solid.svg"  alt="arrow" class="arrow toggle-image">
             </a>
         </div>
 
@@ -125,7 +124,7 @@
             <div class="title"> About:</div>
         </div>
         <a href="#target-contact">
-            <img src="src/images/arrow-down-solid.svg" alt="arrow" class="arrow">
+            <img src="src/images/darkarrow-down-solid.svg" alt="arrow" class="arrow toggle-image" alt="Light Image">
         </a>
     </div>
 
