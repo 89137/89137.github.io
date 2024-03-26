@@ -1,0 +1,98 @@
+body {
+    background: #ffffff;
+    color: #676363;
+}
+
+.title {
+    color: rgb(0, 0, 0);
+}
+
+.mainbody {
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.4);
+}
+
+.sidebody {
+    background: #ffffff;
+    box-shadow: 0 -2px 20px rgb(0, 0, 0);
+}
+
+.contactbody {
+    background: #ffffff;
+    box-shadow: 0 -2px 20px rgb(0, 0, 0);
+}
+
+.project-img img {
+    border: 4px solid #ffffff;
+}
+
+.project-text {
+    background-color: rgba(116, 192, 252, 0.753);
+    border: 4px solid rgba(0, 0, 0, 0);
+    color: white;
+}
+
+#scrollButton {
+    background-color: rgb(255, 255, 255); 
+    color: white;
+    border: 3px solid #c2b8b8;
+}
+
+input[type=text],
+[type=email],
+select,
+textarea {
+    border: 1px solid #000000;
+    background-color: rgb(88, 88, 88);
+    color: white;
+}
+
+.project-text a {
+    color: white;
+}
+
+
+input[type=submit] {
+    background-color: #cc4929;
+    color: white;
+}
+
+input[type=submit]:hover {
+    background-color: #d0583d;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #00000098;
+}
+
+label {
+    color: white;
+}
+
+.contactTitle {
+    color: rgba(116, 192, 252, 0.753);
+}
+
+
+#navbar {
+    background-color: #ffffff;
+}
+
+#navbar ul li a {
+    color: rgba(116, 192, 252, 0.753);
+}
+
+#navbar ul li a:hover,
+#navbar ul li a:focus {
+    background-color: #00d3e62b;
+    color: #1c203d;
+}
+
+#fullscreen-overlay {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.fullscreen-text {
+    color: white;
+}
+

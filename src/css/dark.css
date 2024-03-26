@@ -1,0 +1,119 @@
+body {
+    background: #111;
+    color: #333;
+}
+body::after {
+    background: rgba(0, 0, 0, 0.205);
+}
+.title {
+    color: white;
+}
+.mainbody {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+.project-text a {
+    color: white;
+}
+.sidebody {
+    background: #1d1a1a;
+    box-shadow: 0 -2px 20px rgb(0, 0, 0);
+}
+.contactbody {
+    background: #1d1a1a;
+    box-shadow: 0 -2px 20px rgb(0, 0, 0);
+}
+.project-img img {
+    border: 4px solid black;
+}
+
+.project-text {
+    background-color: rgb(44, 43, 43);
+    border: 4px solid rgba(0, 0, 0, 0);
+    color: white;
+}
+
+#scrollButton {
+    background-color: #12181f;
+    color: white;
+}
+
+/* Contact form css */
+input[type=text],
+[type=email],
+select,
+textarea {
+    border: 1px solid #000000;
+    background-color: rgb(88, 88, 88);
+    color: white;
+}
+
+input[type=submit] {
+    background-color: #cc4929;
+    color: white;
+}
+
+input[type=submit]:hover {
+    background-color: #d0583d;
+}
+
+.container {
+    border: black 3px solid;
+    background-color: #f2f2f298;
+}
+
+label {
+    color: white;
+}
+
+.contactTitle {
+    color: #63e6bfc0;
+}
+
+#navbar {
+    background-color: #000000;
+}
+
+#navbar ul li a {
+    color: #63e6bfc0;
+}
+
+#navbar ul li a:hover,
+#navbar ul li a:focus {
+    background-color: #00d3e62b;
+    color: #ffffff;
+}
+
+
+#fullscreen-overlay {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+
+.fullscreen-text {
+    color: white;
+}
+
+@media screen and (max-width: 768px) {
+    .title {
+        color: white;
+    }
+    .sidebody {
+        background: #1d1a1a;
+        box-shadow: 0 -2px 20px rgb(0, 0, 0);
+    }
+
+    .project-img img {
+        border: 4px solid black;
+    }
+
+    .project-text {
+        background-color: rgb(44, 43, 43);
+        border: 4px solid rgba(0, 0, 0, 0);
+        color: white;
+    }
+
+    .mainbody {
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    }
+}
