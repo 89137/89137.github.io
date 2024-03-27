@@ -1,4 +1,4 @@
-window.onscroll = function() {scrollFunction()};
+window.onscroll = function () { scrollFunction() };
 
 function scrollFunction() {
   // Check if the user has scrolled down a little bit
@@ -29,10 +29,10 @@ function toggleStylesheetAndImages() {
     } else {
       cssLink.setAttribute('href', 'src/css/dark.css');
     }
-    
+
     // Toggle images
     var imageElements = document.querySelectorAll('.toggle-image');
-    imageElements.forEach(function(imageElement) {
+    imageElements.forEach(function (imageElement) {
       var currentSrc = imageElement.getAttribute('src');
       if (currentSrc.includes('light')) {
         imageElement.setAttribute('src', currentSrc.replace('light', 'dark'));
@@ -43,7 +43,7 @@ function toggleStylesheetAndImages() {
 
     // Apply cooldown
     isCooldown = true;
-    setTimeout(function() {
+    setTimeout(function () {
       isCooldown = false;
     }, 300); // 1000 milliseconds cooldown
   }
