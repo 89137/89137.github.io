@@ -2,6 +2,11 @@ body {
     background: #111;
     color: #333;
 }
+
+h1 {
+    color: #63e6bfc0;
+}
+
 body::after {
     background: rgba(0, 0, 0, 0.205);
 }
@@ -57,8 +62,8 @@ input[type=submit]:hover {
 }
 
 .container {
-    border: black 3px solid;
-    background-color: #f2f2f298;
+    border: none;
+    background-color: none;
 }
 
 label {
@@ -81,6 +86,10 @@ label {
 #navbar ul li a:focus {
     background-color: #00d3e62b;
     color: #ffffff;
+}
+
+.abouttitle {
+    color: white;
 }
 
 

@@ -11,6 +11,10 @@ body {
     box-shadow: 0 2px 15px rgba(0, 0, 0, 0.4);
 }
 
+h1 {
+   color: rgba(116, 192, 252, 0.753)
+}
+
 .sidebody {
     background: #ffffff;
     box-shadow: 0 -2px 20px rgb(0, 0, 0);
@@ -42,7 +46,7 @@ input[type=text],
 select,
 textarea {
     border: 1px solid #000000;
-    background-color: rgb(88, 88, 88);
+    background-color: rgb(255, 255, 255);
     color: white;
 }
 
@@ -61,12 +65,11 @@ input[type=submit]:hover {
 }
 
 .container {
-    border-radius: 5px;
-    background-color: #00000098;
+    border-radius: none;
 }
 
 label {
-    color: white;
+    color: black;
 }
 
 .contactTitle {
@@ -96,3 +99,6 @@ label {
     color: white;
 }
 
+.abouttitle {
+    color: black;
+}
