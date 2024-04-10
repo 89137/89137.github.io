@@ -7,8 +7,11 @@ body {
     color: rgb(0, 0, 0);
 }
 
+.link-titel {
+    border-bottom: 1.5px solid rgb(27, 160, 204);
+}
+
 .link-titel:hover {
-    display: inline-block;
     border-bottom: 3px solid rgb(27, 160, 204);
 }
 

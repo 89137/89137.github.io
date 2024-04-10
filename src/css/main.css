@@ -29,13 +29,9 @@ img.toggle-image {
 }
 
 .link-titel {
+    transition: 0.2s;
     display: inline-block;
-    border-bottom: 3px solid rgba(0, 0, 0, 0);
-    border-radius: 3px;
-}
-
-.link-titel:hover {
-    display: inline-block;
+    border-bottom: 1.5px solid rgb(0, 0, 0);
 }
 
 .logo {

@@ -24,7 +24,6 @@ body::after {
 }
 
 .link-titel:hover {
-    display: inline-block;
     border-bottom: 3px solid black;
 }
 
