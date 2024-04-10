@@ -221,7 +221,11 @@ input[type=submit]:hover {
     display: flex;
     justify-content: center;
     text-align: center;
-    padding: 25px;
+    padding: 55px;
+}
+
+.abouttitle.abouttext {
+    text-align: left;
 }
 
 .abouttitle1 {
@@ -427,5 +431,18 @@ input[type=submit]:hover {
         justify-content: center;
         height: 80vh;
         width: 100%;
+    }
+
+    .abouttitle {
+        font-size: calc(1vw + 1vh);
+        z-index: 2;
+        font-family: "Lato", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        padding: 15px;
     }
 }
