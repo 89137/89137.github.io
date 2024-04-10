@@ -18,9 +18,29 @@ body::after {
     pointer-events: none;
 }
 
+img.toggle-image:hover {
+    background-color: #1ea3af61;
+    color: #ffffff;
+    border-radius: 3px;
+}
+
+img.toggle-image {
+    padding: 2px;
+}
+
+.link-titel {
+    display: inline-block;
+    border-bottom: 3px solid rgba(0, 0, 0, 0);
+    border-radius: 3px;
+}
+
+.link-titel:hover {
+    display: inline-block;
+}
+
 .logo {
     display: flex;
-    width: 145px;
+    width: 155px;
     justify-content: space-between;
 }
 

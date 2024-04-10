@@ -23,6 +23,11 @@ body::after {
     color: white;
 }
 
+.link-titel:hover {
+    display: inline-block;
+    border-bottom: 3px solid black;
+}
+
 .sidebody {
     background: #1d1a1a;
     box-shadow: 0 -2px 20px rgb(0, 0, 0);
