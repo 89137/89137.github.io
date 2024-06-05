@@ -346,7 +346,7 @@ input[type=submit]:hover {
     }
 
     .title {
-        font-size: calc(2vw + 2vh);
+        font-size: calc(0.9vw + 2vh);
         z-index: 2;
         font-family: "Lato", sans-serif;
         font-weight: 700;
