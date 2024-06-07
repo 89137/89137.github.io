@@ -1,3 +1,15 @@
+window.onload = function() {
+  // Load theme from localStorage if available
+  var savedTheme = localStorage.getItem('theme');
+  if (savedTheme) {
+    var cssLink = document.getElementById('cssLink');
+    cssLink.setAttribute('href', savedTheme);
+
+    // Set the correct images
+    toggleImages(savedTheme.includes('dark') ? 'dark' : 'light');
+  }
+}
+
 window.onscroll = function () { scrollFunction() };
 
 function scrollFunction() {
@@ -17,34 +29,37 @@ function scrollToTop() {
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 
-
 var isCooldown = false;
 
 function toggleStylesheetAndImages() {
   if (!isCooldown) {
     // Toggle CSS stylesheet
     var cssLink = document.getElementById('cssLink');
-    if (cssLink.getAttribute('href') == 'src/css/dark.css') {
-      cssLink.setAttribute('href', 'src/css/light.css');
-    } else {
-      cssLink.setAttribute('href', 'src/css/dark.css');
-    }
+    var newTheme = (cssLink.getAttribute('href') == 'src/css/dark.css') ? 'src/css/light.css' : 'src/css/dark.css';
+    cssLink.setAttribute('href', newTheme);
+
+    // Save the theme to localStorage
+    localStorage.setItem('theme', newTheme);
 
     // Toggle images
-    var imageElements = document.querySelectorAll('.toggle-image');
-    imageElements.forEach(function (imageElement) {
-      var currentSrc = imageElement.getAttribute('src');
-      if (currentSrc.includes('light')) {
-        imageElement.setAttribute('src', currentSrc.replace('light', 'dark'));
-      } else {
-        imageElement.setAttribute('src', currentSrc.replace('dark', 'light'));
-      }
-    });
+    toggleImages(newTheme.includes('dark') ? 'dark' : 'light');
 
     // Apply cooldown
     isCooldown = true;
     setTimeout(function () {
       isCooldown = false;
-    }, 300); // 1000 milliseconds cooldown
+    }, 300); // 300 milliseconds cooldown
   }
+}
+
+function toggleImages(theme) {
+  var imageElements = document.querySelectorAll('.toggle-image');
+  imageElements.forEach(function (imageElement) {
+    var currentSrc = imageElement.getAttribute('src');
+    if (theme === 'dark') {
+      imageElement.setAttribute('src', currentSrc.replace('light', 'dark'));
+    } else {
+      imageElement.setAttribute('src', currentSrc.replace('dark', 'light'));
+    }
+  });
 }
