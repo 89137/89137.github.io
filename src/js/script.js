@@ -63,3 +63,21 @@ function toggleImages(theme) {
     }
   });
 }
+
+
+function openGameWindow() {
+  const width = 900;
+  const height = 620;
+  const left = (screen.width - width) / 2;
+  const top = (screen.height - height) / 2;
+  const windowFeatures = `width=${width},height=${height},left=${left},top=${top},resizable,scrollbars=yes,status=1`;
+
+  const gameWindow = window.open('', 'GameWindow', windowFeatures);
+
+  const iframeHTML = `<iframe frameborder="0" src="https://itch.io/embed-upload/9869828?color=5d82c6" allowfullscreen="" width="900" height="620">
+                          <a href="https://belljahh.itch.io/me-fish-no-crash">Play Me fish no crash on itch.io</a>
+                      </iframe>`;
+
+  gameWindow.document.write(iframeHTML);
+  gameWindow.document.title = "Me Fish No Crash";
+}
