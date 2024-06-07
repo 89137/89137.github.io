@@ -6,6 +6,10 @@ body {
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     position: relative;
+    
+}
+.animation {
+    animation: vanOnder 1s;
 }
 
 body::after {
@@ -326,6 +330,17 @@ input[type=submit]:hover {
 
 .arrowRight {
     z-index: 10;
+}
+
+@keyframes vanOnder {
+    0% {
+        margin-top: 50em;
+        opacity: 0%;
+    }
+    100% {
+        margin-top: 0;
+        opacity: 100%;
+    }
 }
 
 @media screen and (max-width: 768px) {
