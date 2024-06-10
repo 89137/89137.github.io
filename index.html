@@ -182,6 +182,35 @@
                 </div>
             </div>
         </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.ripples/0.5.3/jquery.ripples.min.js"></script>
+        <script>
+            $(document).ready(function() {
+              $('.mainbody').ripples({
+                resolution: 256,  // Lower resolution for less intensity
+                dropRadius: 10,   // Smaller drops
+                perturbance: 0.02 // Less disturbance in the water
+              });
+        
+              // To update the size of the ripples when the window is resized
+              $(window).on('resize', function() {
+                $('.mainbody').ripples('updateSize');
+              });
+        
+              // Function to create random ripples
+              function createRandomRipple() {
+                var $element = $('.mainbody');
+                var x = Math.random() * $element.width();
+                var y = Math.random() * $element.height();
+                
+                $element.ripples('drop', x, y, 10, 0.05);
+              }
+        
+              // Create random ripples at intervals
+              setInterval(createRandomRipple, 750); // Adjust the interval as needed (2000ms = 2 seconds)
+            });
+          </script>
 </body>
 
 </html>
