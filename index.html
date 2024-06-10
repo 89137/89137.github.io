@@ -45,7 +45,7 @@
         </div>
     </nav>
     <!-- Mainbody -->
-    <div class="mainbody">
+    <div class="mainbody ripple">
         <div class="head animation">
             <div class="title"> Mattia Warning. <span class="fancy">Software developer.</span></div>
             <h1> Student bij Grafisch Lyceum Rotterdam</h1>
@@ -123,7 +123,7 @@
     </div>
 
     <!-- about -->
-    <div class="aboutbody">
+    <div class="aboutbody ripple">
         <div id="target-about"></div>
         <div class="aboutlayout">
             <div class="abouttitle">
@@ -187,7 +187,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.ripples/0.5.3/jquery.ripples.min.js"></script>
         <script>
             $(document).ready(function() {
-              $('.mainbody').ripples({
+              $('.ripple').ripples({
                 resolution: 256,  // Lower resolution for less intensity
                 dropRadius: 10,   // Smaller drops
                 perturbance: 0.02 // Less disturbance in the water
@@ -195,12 +195,12 @@
         
               // To update the size of the ripples when the window is resized
               $(window).on('resize', function() {
-                $('.mainbody').ripples('updateSize');
+                $('.ripple').ripples('updateSize');
               });
         
               // Function to create random ripples
               function createRandomRipple() {
-                var $element = $('.mainbody');
+                var $element = $('.ripple');
                 var x = Math.random() * $element.width();
                 var y = Math.random() * $element.height();
                 
@@ -208,7 +208,7 @@
               }
         
               // Create random ripples at intervals
-              setInterval(createRandomRipple, 750); // Adjust the interval as needed (2000ms = 2 seconds)
+             // setInterval(createRandomRipple, 750); // Adjust the interval as needed (2000ms = 2 seconds)
             });
           </script>
 </body>
