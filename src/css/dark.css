@@ -41,10 +41,10 @@ body::after {
     border: 4px solid black;
 }
 
-.project-text {
+.project {
     background-color: rgb(44, 43, 43);
-    border: 4px solid rgba(0, 0, 0, 0);
-    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 4px solid black;
 }
 
 #scrollButton {
