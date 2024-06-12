@@ -3,12 +3,12 @@
 }
 
 body {
-    margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     position: relative;
     animation: fadeInAnimation ease 3s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
+    overflow-x: hidden;
 }
 .animation {
     animation: vanOnder 1s;
@@ -106,41 +106,106 @@ a {
     justify-content: center;
 }
 
+/* General styling for the sidebody container */
+.sidebody {
+    height: 100vh;
+    max-height: 100vh;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: auto;
+    background: #1d1a1a;
+    box-shadow: 0 -2px 20px rgb(0, 0, 0);
+}
+
+/* Styling for the title and description */
+.title {
+    color: #63e6bfc0;
+    font-size: calc(1.5vw + 1.5vh);
+}
+
+.description {
+    font-size: calc(1vw + 1vh);
+    color: white;
+}
+
+/* General styling for the project container */
 .projects {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    z-index: 1;
-}
-
-.project {
-    text-align: center;
-    height: 35vw;
-    margin: 20px;
-    max-height: 20vh;
-    min-height: 100%;
-
-}
-
-.project {
-    font-size: calc(0.7vw + 0.5vh);
-}
-
-.project-img img {
-    max-width: 100%;
-    border: 4px solid black;
-    height: calc(10vw + 10vh);
-    border-radius: 2px;
-    object-fit: cover;
-    min-width: 100%;
-}
-
-.project-text {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2vw;
+    padding: 2vw;
     width: 100%;
-    margin-top: -20px;
-    padding-top: 5px;
-    height: 100%;
-    z-index: 3;
-    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+/* Individual project card styling */
+.project {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(44, 43, 43);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.2s;
+    border: 4px solid black;
+}
+
+.project:hover {
+    transform: scale(1.05);
+}
+
+/* Image container styling */
+.project-img img {
+    width: 100%;
+    height: 40vh;
+    object-fit: cover;
+    border-bottom: 4px solid black;
+}
+
+/* Text container styling */
+.project-text {
+    padding: 1vw;
+    color: white;
+}
+
+.project-text h2 {
+    margin: 1vw 0;
+    font-size: 2vw;
+}
+
+.project-text p {
+    font-size: 1.5vw;
+    line-height: 1.5;
+}
+
+/* Link styling */
+.project-link {
+    text-decoration: none;
+    color: white;
+}
+
+.link-titel:hover {
+    border-bottom: 3px solid black;
+}
+
+/* Button styling */
+.play-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 1vw 2vw;
+    text-align: center;
+    font-size: 1.5vw;
+    margin: 1vw 0;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.play-button:hover {
+    background-color: #45a049;
 }
 
 #scrollButton {
@@ -409,38 +474,12 @@ input[type=submit]:hover {
         padding-top: 30px;
     }
 
-
-    .projects {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        z-index: 1;
+    .project-text h2 {
+        font-size: 4vw;
     }
 
-    .project {
-        text-align: center;
-        height: 35vw;
-        margin: 10vw;
-        margin-bottom: 20vw;
-        max-height: none;
-    }
-
-    .project {
-        font-size: calc(1vw + 1vh);
-    }
-
-    .project-img img {
-        max-width: 100%;
-        border-radius: 2px;
-        min-width: 100%;
-    }
-
-    .project-text {
-        width: 100%;
-        margin-top: -20px;
-        padding-bottom: 10vw;
-        height: 30%;
-        z-index: 3;
-        border-radius: 3px;
+    .project-text p, .play-button {
+        font-size: 3vw;
     }
 
     .mainbody {

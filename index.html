@@ -15,8 +15,9 @@
 
 <body>
     <button id="scrollButton" onclick="scrollToTop()">
-        <img src="src/images/darkarrow-up-solid.svg" alt="Linkedin" width="32vw" height="32vh" class="toggle-image">
+        <img src="src/images/darkarrow-up-solid.svg" alt="Scroll to top" width="32vw" height="32vh" class="toggle-image">
     </button>
+
     <!-- Navbar -->
     <nav id="navbar">
         <div class="nav-wrapper">
@@ -26,191 +27,157 @@
             </ul>
             <div class="logo">
                 <a href="https://www.linkedin.com/in/mattia-warning/" target="_blank">
-                    <img class="toggle-image" src="src/images/darklinkedin.svg" alt="Linkedin" width="32vw"
-                        height="32vh" alt="Light Image">
+                    <img class="toggle-image" src="src/images/darklinkedin.svg" alt="LinkedIn" width="32vw" height="32vh">
                 </a>
                 <a href="#target-contact">
-                    <img class="toggle-image" src="src/images/darkenvelope-regular.svg" alt="Email" width="32vw"
-                        height="32vh" alt="Light Image">
+                    <img class="toggle-image" src="src/images/darkenvelope-regular.svg" alt="Email" width="32vw" height="32vh">
                 </a>
                 <a href="https://github.com/89137" target="_blank">
-                    <img class="toggle-image" src="src/images/darkgithub.svg" alt="Email" width="32vw" height="32vh"
-                        alt="Light Image">
+                    <img class="toggle-image" src="src/images/darkgithub.svg" alt="GitHub" width="32vw" height="32vh">
                 </a>
-                <button onclick="toggleStylesheetAndImages()"
-                    style="border: none; background: none; padding: 0; cursor: pointer;">
-                    <img class="toggle-image" src="src/images/darkmode.svg" alt="Email" width="32vw" height="32vh">
+                <button onclick="toggleStylesheetAndImages()" style="border: none; background: none; padding: 0; cursor: pointer;">
+                    <img class="toggle-image" src="src/images/darkmode.svg" alt="Toggle Dark Mode" width="32vw" height="32vh">
                 </button>
             </div>
         </div>
     </nav>
+
     <!-- Mainbody -->
     <div class="mainbody ripple">
         <div class="head animation">
-            <div class="title"> Mattia Warning. <span class="fancy">Software developer.</span></div>
-            <h1> Student bij Grafisch Lyceum Rotterdam</h1>
+            <div class="title">Mattia Warning. <span class="fancy">Software developer.</span></div>
+            <h1>Student bij Grafisch Lyceum Rotterdam</h1>
         </div>
         <a href="#target-section">
-            <img src="src/images/darkarrow-down-solid.svg" class="arrow toggle-image" alt="arrow" alt="Light Image">
+            <img src="src/images/darkarrow-down-solid.svg" class="arrow toggle-image" alt="Scroll down">
         </a>
     </div>
 
     <!-- Projects -->
     <div class="sidebody">
-
-        <div id="target-section">
-        </div>
-        <h1 style="font-size: calc(1.5vw + 1.5vh);">Project voorbeelden:</h1>
-        <span style="font-size: calc(1vw + 1vh);"> klik op de naam van het project voor de link</span>
+        <div id="target-section"></div>
+        <h1 class="section-title">Project voorbeelden:</h1>
+        <span class="section-subtitle">klik op de naam van het project voor de link</span>
 
         <div class="projects">
-
             <div class="project">
-
                 <div class="project-img">
-                    <img src="src/images/game2.png" alt="Project 1">
+                    <img src="src/images/game2.png" alt="Me fish no crash">
                 </div>
-
                 <div class="project-text">
-                    <a href="https://belljahh.itch.io/me-fish-no-crash"
-                        target="_blank" style="text-decoration: none;">
+                    <a href="https://belljahh.itch.io/me-fish-no-crash" target="_blank">
                         <h2 class="link-titel">Me fish no crash</h2>
                     </a>
-                    <p> Een flappy bird stijl game onderwater met axolotls. <br> Gemaakt met construct 4 <br> <button class="play-button" onclick="openGameWindow()">Play Game</button> </p>
+                    <p>Een flappy bird stijl game onderwater met axolotls. <br> Gemaakt met construct 4</p>
+                    <button class="play-button" onclick="openGameWindow()">Play Game</button>
                 </div>
-
             </div>
 
             <div class="project">
-
                 <div class="project-img">
-                    <img src="src/images/torrontoZoo.png" alt="Project 1" alt="Light Image">
+                    <img src="src/images/torrontoZoo.png" alt="Toronto Zoo">
                 </div>
-
                 <div class="project-text">
-                    <a href="https://89137.stu.sd-lab.nl/Opdrachten/Jaar1/Beroeps/Toronto%20Zoo/index.html"
-                        target="_blank">
-                        <h2 class="link-titel">TorrontoZoo</h2>
+                    <a href="https://89137.stu.sd-lab.nl/Opdrachten/Jaar1/Beroeps/Toronto%20Zoo/index.html" target="_blank">
+                        <h2 class="link-titel">Toronto Zoo</h2>
                     </a>
-                    <p>Info site voor een dierentuin. <br>Gemaakt met html/css</p>
+                    <p>Info site voor een dierentuin. <br>Gemaakt met HTML/CSS</p>
                 </div>
-
             </div>
 
             <div class="project">
-
                 <div class="project-img">
-                    <img src="src/images/Verzamelaar.png" alt="Project 1">
+                    <img src="src/images/Verzamelaar.png" alt="Verzamelaar">
                 </div>
-
                 <div class="project-text">
-                    <a href="https://89137.stu.sd-lab.nl/Opdrachten/Jaar2/Beroeps/Verzamelaar_89137/Index.php"
-                        target="_blank">
-                        <h2 class="link-titel">Verzamelaar</h2> 
+                    <a href="https://89137.stu.sd-lab.nl/Opdrachten/Jaar2/Beroeps/Verzamelaar_89137/Index.php" target="_blank">
+                        <h2 class="link-titel">Verzamelaar</h2>
                     </a>
-                    <p>De site haalt info uit een database om films te laten zien.<br> Gemaakt met html/css/php</p>
+                    <p>De site haalt info uit een database om films te laten zien.<br> Gemaakt met HTML/CSS/PHP</p>
                 </div>
-
             </div>
         </div>
-        <div class="target-Contact">
+        <div class="target-contact">
             <a href="#target-about">
-                <img src="src/images/darkarrow-down-solid.svg" alt="arrow" class="arrow toggle-image">
+                <img src="src/images/darkarrow-down-solid.svg" alt="Scroll to About" class="arrow toggle-image">
             </a>
         </div>
-
-    </div>
     </div>
 
-    <!-- about -->
+    <!-- About -->
     <div class="aboutbody ripple">
         <div id="target-about"></div>
         <div class="aboutlayout">
-            <div class="abouttitle">
-                <div class="abouttitle abouttitle1">
-                    <h1>Over mij: </h1>
-                    <img src="src/images/skel.png" alt="Project 1">
-                </div>
+            <div class="abouttitle abouttitle1">
+                <h1>Over mij:</h1>
+                <img src="src/images/skel.png" alt="Over mij">
             </div>
             <div class="abouttitle abouttext">
                 <span>
-                    Mijn naam is Mattia warning. <br><br>
-                    Ik ben 17 jaar oud en zit in het tweede jaar van de opleiding Software Developer op het Grafisch
-                    Lyceum Rotterdam, op niveau 4. Als minor volg ik Digital Signage.
+                    Mijn naam is Mattia Warning. <br><br>
+                    Ik ben 17 jaar oud en zit in het tweede jaar van de opleiding Software Developer op het Grafisch Lyceum Rotterdam, op niveau 4. Als minor volg ik Digital Signage.
                     <br><br>
                     Wat zijn mijn sterke punten?<br><br>
-                    <li> Werken met html en css structuur. </li>
-                    <li> Mezelf toepassen aan projecten. </li>
-                    <li> Leren van nieuwe technieken.</li>
-                    <a href="src/images/cv.pdf" download style="color: white;"> Download Cv</a>
+                    <li>Werken met HTML en CSS structuur.</li>
+                    <li>Mezelf toepassen aan projecten.</li>
+                    <li>Leren van nieuwe technieken.</li>
+                    <a href="src/images/cv.pdf" download style="color: white;">Download Cv</a>
                 </span>
             </div>
         </div>
         <a href="#target-contact">
-            <img src="src/images/darkarrow-down-solid.svg" alt="arrow" class="arrow toggle-image" alt="Light Image">
+            <img src="src/images/darkarrow-down-solid.svg" alt="Scroll to Contact" class="arrow toggle-image">
         </a>
     </div>
 
     <!-- Contact -->
     <div class="contactbody">
         <div id="target-contact"></div>
-            <div class="contactTitle">
-                <p>
-                    Contact formulier:
-                    <br> <i>stuur mij een mail! </i>
-                </p>
-
-            </div>
-            <div class="container">
-                <form action="https://formspree.io/f/xnqkvjwa" method="POST">
-                    <label for="Naam">Naam*</label>
-                    <input type="text" id="Naam" name="Naam" placeholder="Naam.." required>
-
-                    <label for="Email">Email*</label>
-                    <input type="email" id="Email" name="Email" placeholder="Email.." required>
-
-                    <label for="Bedrijf">Bedrijf naam*</label>
-                    <input type="text" id="Bedrijf" name="Bedrijf" placeholder="Bedrijf naam.." required>
-
-                    <label for="Bericht">Bericht*</label>
-                    <textarea id="Bericht" name="Bericht" placeholder="Schrijf een bericht.." style="height:200px"
-                        required></textarea>
-
-                    <input type="submit" value="Submit">
-                </form>
-                <div>
-                </div>
-            </div>
+        <div class="contactTitle">
+            <p>Contact formulier:<br><i>stuur mij een mail!</i></p>
         </div>
+        <div class="container">
+            <form action="https://formspree.io/f/xnqkvjwa" method="POST">
+                <label for="Naam">Naam*</label>
+                <input type="text" id="Naam" name="Naam" placeholder="Naam.." required>
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.ripples/0.5.3/jquery.ripples.min.js"></script>
-        <script>
-            $(document).ready(function() {
-              $('.ripple').ripples({
-                resolution: 256,  // Lower resolution for less intensity
-                dropRadius: 10,   // Smaller drops
-                perturbance: 0.02 // Less disturbance in the water
-              });
-        
-              // To update the size of the ripples when the window is resized
-              $(window).on('resize', function() {
+                <label for="Email">Email*</label>
+                <input type="email" id="Email" name="Email" placeholder="Email.." required>
+
+                <label for="Bedrijf">Bedrijf naam*</label>
+                <input type="text" id="Bedrijf" name="Bedrijf" placeholder="Bedrijf naam.." required>
+
+                <label for="Bericht">Bericht*</label>
+                <textarea id="Bericht" name="Bericht" placeholder="Schrijf een bericht.." style="height:200px" required></textarea>
+
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.ripples/0.5.3/jquery.ripples.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.ripple').ripples({
+                resolution: 256,
+                dropRadius: 10,
+                perturbance: 0.02
+            });
+
+            $(window).on('resize', function () {
                 $('.ripple').ripples('updateSize');
-              });
-        
-              // Function to create random ripples
-              function createRandomRipple() {
+            });
+
+            function createRandomRipple() {
                 var $element = $('.ripple');
                 var x = Math.random() * $element.width();
                 var y = Math.random() * $element.height();
-                
+
                 $element.ripples('drop', x, y, 10, 0.05);
-              }
-        
-              // Create random ripples at intervals
-             // setInterval(createRandomRipple, 750); // Adjust the interval as needed (2000ms = 2 seconds)
-            });
-          </script>
+            }
+        });
+    </script>
 </body>
 
 </html>
