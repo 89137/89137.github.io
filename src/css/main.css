@@ -324,6 +324,7 @@ input[type=submit]:hover {
     top: 0;
     z-index: 1000;
     position: relative;
+    border-radius: 10px;
 }
 
 #navbar .nav-wrapper {
