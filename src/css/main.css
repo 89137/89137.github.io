@@ -14,6 +14,16 @@ body {
     animation: vanOnder 1s;
 }
 
+#Ripplebutton {
+    display: block;
+    border: none;
+    font-size: calc(0.75vw + 0.75vh);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 3px;
+    background: none;
+}
+
 body::after {
     content: "";
     position: absolute;

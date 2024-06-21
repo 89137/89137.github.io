@@ -9,7 +9,10 @@
     <link rel="stylesheet" href="src/css/effects.css">
     <link rel="stylesheet" href="src/css/main.css">
     <link rel="stylesheet" href="src/css/dark.css" id="cssLink">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.ripples/0.5.3/jquery.ripples.min.js"></script>
     <script src="src/js/script.js"></script>
+    <script src="src/js/ripple.js"></script>
     <title>Portfolio</title>
 </head>
 
@@ -24,6 +27,7 @@
             <ul>
                 <li><a href="#target-about">Over mij</a></li>
                 <li><a href="#target-contact">Contact</a></li>
+                <li><a class="ripple" id="Ripplebutton"> Toggle Ripple</a></li>
             </ul>
             <div class="logo">
                 <a href="https://www.linkedin.com/in/mattia-warning/" target="_blank">
@@ -167,29 +171,6 @@
         </div>
     </div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.ripples/0.5.3/jquery.ripples.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            $('.ripple').ripples({
-                resolution: 256,
-                dropRadius: 10,
-                perturbance: 0.02
-            });
-
-            $(window).on('resize', function () {
-                $('.ripple').ripples('updateSize');
-            });
-
-            function createRandomRipple() {
-                var $element = $('.ripple');
-                var x = Math.random() * $element.width();
-                var y = Math.random() * $element.height();
-
-                $element.ripples('drop', x, y, 10, 0.05);
-            }
-        });
-    </script>
 </body>
 
 </html>
