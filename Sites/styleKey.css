@@ -1,0 +1,30 @@
+@media screen and (max-width: 768px) {
+    #navbar .nav-wrapper {
+        flex-direction: column;
+        height: 100%;
+    }
+
+    #navbar ul {
+        flex-direction: row;
+        width: 100%;
+        justify-content: center;
+    }
+
+    #navbar ul li a {
+        padding: 10px;
+        text-align: center;
+    }
+
+    .title {
+        font-size: calc(0.9vw + 2vh);
+        z-index: 2;
+        font-family: "Lato", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+    }
+
+    a {
+        font-size: calc(1vw + 1vh);
+    }
+
+}
