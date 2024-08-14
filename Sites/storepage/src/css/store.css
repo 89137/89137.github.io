@@ -48,16 +48,16 @@
 }
 
 .link-titel {
-    transition: 0.2s;
-    display: inline-block;
+  transition: 0.2s;
+  display: inline-block;
 }
 
 .link-titel:hover {
-    border-bottom: 3px solid black;
+  border-bottom: 3px solid black;
 }
 
 .product-text a {
-    color: white;
+  color: white;
 }
 
 /* Scroll Buttons (Left/Right) */
@@ -93,4 +93,39 @@
 /* Show scroll buttons when needed */
 .store-container.overflow .scroll-btn {
   display: block;
+}
+
+/* Media Queries for Responsiveness */
+
+/* For tablets and smaller screens (less than 1024px) */
+@media (max-width: 1024px) {
+  .product {
+    flex: 0 0 30vw; /* Each product takes up 30% of the viewport width */
+  }
+
+  .product-img img {
+    height: 20vh; /* Reduce the image height */
+  }
+}
+
+/* For mobile devices (less than 768px) */
+@media (max-width: 768px) {
+  .product {
+    flex: 0 0 40vw; /* Each product takes up 40% of the viewport width */
+  }
+
+  .product-img img {
+    height: 15vh; /* Further reduce the image height */
+  }
+}
+
+/* For very small mobile devices (less than 480px) */
+@media (max-width: 480px) {
+  .product {
+    flex: 0 0 80vw; /* Each product takes up 80% of the viewport width */
+  }
+
+  .product-img img {
+    height: 12vh; /* Even smaller image height */
+  }
 }
