@@ -1,0 +1,96 @@
+.store-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden; /* Hide overflow to create the scrolling effect */
+}
+
+.store {
+  display: flex;
+  gap: 2vw;
+  padding: 2vw;
+  overflow-x: auto; /* Enable horizontal scrolling */
+  scroll-behavior: smooth;
+  scrollbar-width: none; /* Hide scrollbar (Firefox) */
+}
+
+.store::-webkit-scrollbar {
+  display: none; /* Hide scrollbar (Chrome, Safari) */
+}
+
+.product {
+  flex: 0 0 20vw; /* Each product takes up 20% of the viewport width */
+  display: flex;
+  flex-direction: column;
+  background-color: #2ebddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.2s;
+  border: 4px solid rgb(85, 192, 174);
+  border-style: dotted;
+}
+
+.product:hover {
+  transform: scale(1.05);
+}
+
+.product-img img {
+  width: 100%;
+  height: 27vh;
+  object-fit: cover;
+  border-bottom: 4px solid #106f84;
+}
+
+.product-text {
+  padding: 1vw;
+  color: white;
+}
+
+.link-titel {
+    transition: 0.2s;
+    display: inline-block;
+}
+
+.link-titel:hover {
+    border-bottom: 3px solid black;
+}
+
+.product-text a {
+    color: white;
+}
+
+/* Scroll Buttons (Left/Right) */
+.scroll-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 1rem;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.scroll-btn.left {
+  left: 0;
+}
+
+.scroll-btn.right {
+  right: 0;
+}
+
+.scroll-btn:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Hide scroll buttons by default */
+.scroll-btn {
+  display: none;
+}
+
+/* Show scroll buttons when needed */
+.store-container.overflow .scroll-btn {
+  display: block;
+}
