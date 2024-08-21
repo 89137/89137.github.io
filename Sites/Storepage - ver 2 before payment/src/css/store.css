@@ -53,7 +53,7 @@
 }
 
 .link-titel:hover {
-  border-bottom: 3px solid black;
+  transform: scale(1.05);
 }
 
 .product-text a {
